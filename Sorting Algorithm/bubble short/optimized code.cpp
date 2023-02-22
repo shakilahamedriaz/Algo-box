@@ -16,7 +16,7 @@ for(int i=0; i<n; i++)
 
     cin>>arr[i];
 }
-
+//emni
 cout<< "The unsorted array  is : ";
 for(int i=0; i<n; i++){
     cout<<arr[i]<< " ";
