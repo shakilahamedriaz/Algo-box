@@ -16,25 +16,20 @@ for(int i=0; i<n; i++)
 
 cout<<endl;
 
-//the main part of selection sort is here;
-
-for(int i=0; i<n-1; i++)
+//the main part of insertion sort is here;
+for(int i=1; i<n; i++)
 {
-    int min=i;
-    for(int j=i+1; j<n; j++)
+    int temp=i;
+    int j=i-1;
+    while(j>=0 && arr[j]>temp)
     {
-        if(arr[j]<arr[min])
-        {
-            min=j;
-        }
-    }
-    
-    if(min != i)
-    {
-        swap(arr[i],arr[min]);
+        arr[j+1]=arr[j];
+        j--;
     }
 
+    arr[j+1]=temp;
 }
+
 
 cout<<endl;
 cout<< "The sorted array is : "<<endl;
