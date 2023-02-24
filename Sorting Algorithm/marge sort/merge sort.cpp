@@ -12,15 +12,17 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>a[i];
     }
-    int i,j,k,mid,lb,up;
-       mid=n/2;
+    int i,j,k,mid,lb,ub;
+       
+       ub=n-1;
        i=lb;
+       mid=n/2;
        j=mid+1;
        k=lb;
        
 
    //main part of the code .
-    while(i<=mid && j<=up)
+    while(i<=mid && j<=ub)
     {
         if(a[i]<=a[j])
         {
@@ -59,15 +61,10 @@ int main(){
     for(k=lb; k<ub; k++)
     {
         a[k]=b[k];
+        cout<<a[k]<< " ";
     }
 
 
-    //print array
-    cout<<endl;
-    for(int i=0; i<n ; i++)
-    {
-        cout<<a[i]<< " ";
-    }
     
     return 0;
 }
