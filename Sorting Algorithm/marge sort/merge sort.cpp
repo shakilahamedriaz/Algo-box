@@ -10,16 +10,20 @@ int main(){
 
     cout<< "please input elements in array: ";
     for(int i=0; i<n; i++){
+
         cin>>a[i];
     }
+
+    //main part
     int i,j,k,mid,lb,ub;
-       
+
+        mid=(0+n-1);
+       lb=0;
        ub=n-1;
        i=lb;
-       mid=n/2;
        j=mid+1;
        k=lb;
-       
+
 
    //main part of the code .
     while(i<=mid && j<=ub)
@@ -64,7 +68,13 @@ int main(){
         cout<<a[k]<< " ";
     }
 
+    //print array
+    for(int i=0; i<n; i++)
+    {
 
-    
+        cout<<a[i]<< " ";
+    }
+
+
     return 0;
 }
